@@ -64,15 +64,15 @@ function showPage(page) {
             <div class="accordion-item ${row.used ? 'used' : ''}">
                 <h2 class="accordion-header" id="${headerId}">
                     <button class="accordion-button collapsed ${row.used ? 'used' : ''}" type="button" data-bs-toggle="collapse" data-bs-target="#${itemId}" aria-expanded="false" aria-controls="${itemId}">
-                        ${row[3]} <!-- Alamat -->
+                        ${row[2]} <!-- Alamat -->
                     </button>
                 </h2>
                 <div id="${itemId}" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
-                        <p>Nama: ${row[2]}</p>
-                        <p>Alamat: ${row[3]}</p>
-                        <p>Kelurahan: ${row[5]}</p>
-                        <p>No Voucher: ${row[6]}</p>
+                        <p>Nama: ${row[1]}</p>
+                        <p>Alamat: ${row[2]}</p>
+                        <p>Kelurahan: ${row[3]}</p>
+                        <p>No Voucher: ${row[4]}</p>
                         <button class="btn btn-success" ${row.used ? 'disabled' : ''} onclick="markAsUsed(${start + index})">
                             ${row.used ? 'Marked as Used' : 'Mark as Used'}
                         </button>
